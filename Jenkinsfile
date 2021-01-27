@@ -13,4 +13,15 @@ node {
   {
     sh 'docker build -d -p 8080:8080 test --name testcontainer'
   }
+  stage('archive (includes: 'pkg/*.gem')')
+  {
+    publishHTML (target: [
+      allowMissing: false,
+      alwaysLinkToLastBuild: false,
+      keepAll: true,
+      reportDir: 'coverage',
+      reportFiles: 'index.html',
+      reportName: "RCov Report"
+    ])
+  }
 }
