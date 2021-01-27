@@ -10,5 +10,12 @@
       <passphrase>some_passphrase</passphrase>
     </server>
   </servers>
+  <server>
+      <id>nexus</id>
+      <username>nexus username</username>
+      <password>nexus password</password>
+      <privateKey>${user.home}/.ssh/id_dsa</privateKey>
+      <passphrase>some_passphrase</passphrase>
+    </server>
   ...
 </settings>
