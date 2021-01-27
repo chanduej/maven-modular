@@ -12,4 +12,4 @@ WORKDIR /app/
 COPY --from=build /app/module1/target/*.jar /app/
 COPY --from=build /app/module2/target/*.jar /app/
 EXPOSE 8080
-CMD ["java -jar module1-2.0-SNAPSHOT.jar module2-2.0-SNAPSHOT.jar"]
+CMD ["java -jar module1-2.0-SNAPSHOT.jar"; "java -jar module2-2.0-SNAPSHOT.jar"]
