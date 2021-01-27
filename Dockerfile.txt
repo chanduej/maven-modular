@@ -1,0 +1,18 @@
+FROM alpine/git
+WORDIR /app
+RUN git clone https://github.com/chanduej/maven-modular.git
+
+FROM maven:3.5-jdk-8-alpine
+WORKDIR /app
+COPY /app/maven-modular /app
+RUN mvn clean install
+
+FROM openjdk:8-jre-alpine
+WORKDIR /app
+COPY /app/maven-modula/module1/target/module1-2.0-SNAPSHOT.jar
+COPY /app/maven-modula/module2/target/module2-2.0-SNAPSHOT.jar
+EXPOSE 8080
+CMD ["java -jar module1-2.0-SNAPSHOT.jar module2-2.0-SNAPSHOT.jar"]
+
+
+
