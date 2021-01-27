@@ -21,7 +21,7 @@ node {
       keepAll: true,
       reportDir: 'coverage',
       reportFiles: 'index.html',
-      reportName: "RCov Report"
+      reportName: "<report name>"
     ])
   }
 }
