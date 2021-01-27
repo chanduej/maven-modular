@@ -4,5 +4,5 @@ target/
 *.class
 .classpath
 .project
-.settings
+.settings.xml
 *.versionsBackup
