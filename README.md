@@ -1,4 +1,6 @@
 Example Maven multi-module project
+
+
 This project has two maven modules:
 
 module1
