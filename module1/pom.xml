@@ -28,19 +28,4 @@
       <version>18.0</version>
     </dependency>
   </dependencies>
-  <distributionManagement>
-	
-	    <repository>
-	      <id>nexus</id>
-	      <name>Releases Nexus Repository</name>
-	      <url>url/repository/releases/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Snapshot Nexus Repository </name>
-	      <url>nexus url/repository/snapshot/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
 </project>
