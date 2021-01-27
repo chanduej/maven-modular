@@ -13,7 +13,7 @@ node {
   {
     sh 'docker build -d -p 8080:8080 test --name testcontainer'
   }
-  stage('archive (includes: 'pkg/*.gem')')
+  stage('archive Code Coverage Report')
   {
     publishHTML (target: [
       allowMissing: false,
